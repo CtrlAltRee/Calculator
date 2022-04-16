@@ -12,12 +12,12 @@ body {
 .calculator {
     width: 320px;
     height: 530px;
-    background-color: black;
+    background-color: white;
     margin: 0 auto;
     top: 20px;
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .result {
@@ -60,7 +60,7 @@ body {
 }
 
 .operator {
-    background-color: lightgray;
+    background-color: darkgray;
 }
 
 .number, .operator {
@@ -73,6 +73,10 @@ body {
 
 .operator:focus, .number:focus, .empty:focus {
     outline: 0;
+}
+
+.operator:hover, .number:hover, .empty:hover {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .operator:nth-child(4) {
@@ -99,3 +103,5 @@ body {
     font-size: 20px;
     background-color: rgb(160, 178, 238);
 }
+
+    /* color theory #e3975d */
